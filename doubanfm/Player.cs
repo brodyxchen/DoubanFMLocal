@@ -20,6 +20,7 @@ namespace DoubanFM
             this.callbackPlay = callbackPlay;
             player = new WMPLib.WindowsMediaPlayer();
             player.PlayStateChange += new WMPLib._WMPOCXEvents_PlayStateChangeEventHandler(Player_PlayStateChange);
+            Volume(30);
         }
 
         private void Player_PlayStateChange(int NewState)

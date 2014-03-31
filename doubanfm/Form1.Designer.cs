@@ -49,6 +49,7 @@
             this.UI_Voice = new System.Windows.Forms.TrackBar();
             this.UI_LoginTip = new System.Windows.Forms.Label();
             this.UI_SettingClose = new System.Windows.Forms.PictureBox();
+            this.UI_SaveLoginIn = new System.Windows.Forms.CheckBox();
             this.UI_ControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UI_Next)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UI_Star)).BeginInit();
@@ -183,6 +184,7 @@
             // 
             this.UI_LoginPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UI_LoginPanel.BackgroundImage")));
             this.UI_LoginPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.UI_LoginPanel.Controls.Add(this.UI_SaveLoginIn);
             this.UI_LoginPanel.Controls.Add(this.UI_LoginIn);
             this.UI_LoginPanel.Controls.Add(this.UI_LoginUsername);
             this.UI_LoginPanel.Controls.Add(this.UI_LoginPassword);
@@ -261,6 +263,16 @@
             this.UI_SettingClose.TabStop = false;
             this.UI_SettingClose.MouseClick += new System.Windows.Forms.MouseEventHandler(this.UI_SettingClose_MouseClick);
             // 
+            // UI_SaveLoginIn
+            // 
+            this.UI_SaveLoginIn.AutoSize = true;
+            this.UI_SaveLoginIn.Location = new System.Drawing.Point(24, 67);
+            this.UI_SaveLoginIn.Name = "UI_SaveLoginIn";
+            this.UI_SaveLoginIn.Size = new System.Drawing.Size(48, 16);
+            this.UI_SaveLoginIn.TabIndex = 19;
+            this.UI_SaveLoginIn.Text = "记住";
+            this.UI_SaveLoginIn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -317,6 +329,7 @@
         private System.Windows.Forms.PictureBox UI_Star;
         private System.Windows.Forms.PictureBox UI_Hate;
         private System.Windows.Forms.PictureBox UI_Next;
+        private System.Windows.Forms.CheckBox UI_SaveLoginIn;
 
     }
 }

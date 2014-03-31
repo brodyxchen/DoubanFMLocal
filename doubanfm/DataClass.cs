@@ -32,6 +32,18 @@ namespace DoubanFM
         public LinkedListNode<SongJson> playListIndex { get; set; }
     }
 
+    class Setting
+    {
+        
+    }
+
+    class User
+    {
+        public string username { get; set; }
+        public string password { get; set; }
+        public bool saveLoginIn { get; set; }
+    }
+
     public class Channel
     {
         public string name { get; set; }
@@ -57,7 +69,7 @@ namespace DoubanFM
         public int r { get; set; }
         public string user_name { get; set; }
         public string email { get; set; }
-        
+
     }
 
     public class ChannelJson
